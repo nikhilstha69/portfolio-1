@@ -1,0 +1,185 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* BODY */
+body {
+    background: linear-gradient(135deg, #e3f2ff, #ffffff);
+    color: #222;
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(10px);
+    padding: 22px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #004e9a;
+}
+
+/* NAVIGATION */
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #005fc0;
+}
+
+/* SECTIONS */
+section {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #003c7d;
+}
+
+/* UNDERLINE EFFECT */
+section h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: #007fff;
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+
+/* ABOUT SECTION */
+#me p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 19px;
+    color: #444;
+}
+
+/* PROJECT CARD - Glassmorphism Style */
+.project-card {
+    margin: 50px auto;
+    width: 65%;
+    padding: 30px;
+    
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(18px);
+    border-radius: 18px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+}
+
+/* PROJECT IMAGE */
+.project-card img {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+/* CONTACT FORM (Glassmorphism) */
+form {
+    width: 55%;
+    margin: auto;
+    padding: 35px;
+    
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+form label {
+    font-weight: 600;
+    display: block;
+    margin: 10px 0 6px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #007fff;
+    box-shadow: 0 0 8px rgba(0, 127, 255, 0.3);
+}
+
+form textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* BUTTON */
+form button {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+
+    background: #006adf;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #0053b0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    nav a {
+        margin-left: 12px;
+        font-size: 14px;
+    }
+
+    form, .project-card {
+        width: 90%;
+    }
+
+    section {
+        padding: 70px 7%;
+    }
+}
