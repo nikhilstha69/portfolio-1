@@ -183,3 +183,11 @@ form button:hover {
         padding: 70px 7%;
     }
 }
+footer {
+    background: #1a1a1a;
+    color: #e8e8e8;
+    text-align: center;
+    padding: 25px 0;
+    border-top: 1px solid #444;
+    font-family: 'Poppins', sans-serif;
+}
